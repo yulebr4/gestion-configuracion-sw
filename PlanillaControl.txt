@@ -12,5 +12,7 @@
 004    2024-11-07 | Yulen Boni | feature/validaciones | feat | Agregar validaciones en ingreso de productos  
 005    2024-11-07 | Yulen Boni | develop | merge | Integrar validaciones desde feature/validaciones
 006 | 2024-11-07 | Yulen Boni | develop | merge | Integrar búsqueda desde feature/búsqueda
-007 | 2024-11-07 | Yulen Bruges | release/1.0.0 | docs | Agregar documentación del proyecto
+007 | 2024-11-07 | Yulen Boni | release/1.0.0 | docs | Agregar documentación del proyecto
+008 | 2024-11-07 | Yulen Boni | main | release | Versión 1.0.0 lista para producción
+009 | 2024-11-07 | Yulen Boni | develop | merge | Sincronizar develop con release 1.0.0
 
