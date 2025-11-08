@@ -9,8 +9,7 @@ namespace SistemaInventario
 
         static void Main(string[] args)
         {
-            Console.WriteLine("=================================");
-            Console.WriteLine("  SISTEMA DE INVENTARIO v1.2");
+    
             Console.WriteLine("=================================\n");
 
             bool continuar = true;
