@@ -1,0 +1,8 @@
+===================================================================
+    PLANILLA DE CONTROL Y SEGUIMIENTO DE CAMBIOS
+    Proyecto: Sistema de Inventario
+    Responsable: yulebr4
+===================================================================
+
+ID     | Fecha      | Autor      | Rama      | Tipo      | Descripción
+-------|------------|------------|-----------|-----------|------------------
