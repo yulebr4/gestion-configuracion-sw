@@ -11,4 +11,6 @@
 003    2024-11-07 | Yulen Boni | feature/busqueda | feat | Agregar funcionalidad de búsqueda de productos  
 004    2024-11-07 | Yulen Boni | feature/validaciones | feat | Agregar validaciones en ingreso de productos  
 005    2024-11-07 | Yulen Boni | develop | merge | Integrar validaciones desde feature/validaciones
-006 | 2024-11-07 | Yulen Boni | develop | merge | Integrar búsqueda desde feature/busqueda
+006 | 2024-11-07 | Yulen Boni | develop | merge | Integrar búsqueda desde feature/búsqueda
+007 | 2024-11-07 | Yulen Bruges | release/1.0.0 | docs | Agregar documentación del proyecto
+
