@@ -6,3 +6,4 @@
 
 ID     | Fecha      | Autor      | Rama      | Tipo      | Descripción
 -------|------------|------------|-----------|-----------|------------------
+001    | 2025-11-07 | yulebr4    | main     | chore     | Configuración inicial del proyecto
