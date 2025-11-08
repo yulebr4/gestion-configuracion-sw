@@ -10,3 +10,4 @@ ID     | Fecha      | Autor      | Rama      | Tipo      | Descripción
 002    | 2024-11-07 | Yulen Boni | develop   | feat      | Implementar sistema de inventario con menú, agregar y listar productos
 003    | 2024-11-07 | Yulen Boni | feature/busqueda      | feat | Agregar funcionalidad de búsqueda de productos
 004    | 2024-11-07 | Yulen Boni | feature/validaciones | feat | Agregar validaciones en ingreso de productos
+005    | 2024-11-07 | Yulen Boni | develop | merge      | Integrar validaciones desde feature/validaciones
