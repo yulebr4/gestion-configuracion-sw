@@ -10,7 +10,7 @@ namespace SistemaInventario
         static void Main(string[] args)
         {
             Console.WriteLine("=================================");
-            Console.WriteLine("  SISTEMA DE INVENTARIO v1.0");
+            Console.WriteLine("  SISTEMA DE INVENTARIO v1.2");
             Console.WriteLine("=================================\n");
 
             bool continuar = true;
@@ -28,6 +28,9 @@ namespace SistemaInventario
                         ListarProductos();
                         break;
                     case "3":
+                        BuscarProducto();
+                        break;
+                    case "4":
                         continuar = false;
                         Console.WriteLine("¡Hasta luego!");
                         break;
@@ -42,7 +45,8 @@ namespace SistemaInventario
         {
             Console.WriteLine("1. Agregar producto");
             Console.WriteLine("2. Listar productos");
-            Console.WriteLine("3. Salir");
+            Console.WriteLine("3. Buscar producto");
+            Console.WriteLine("4. Salir");
             Console.Write("\nSeleccione una opción: ");
         }
 
@@ -50,8 +54,23 @@ namespace SistemaInventario
         {
             Console.Write("Nombre del producto: ");
             string nombre = Console.ReadLine();
+            
+            // Validación de nombre vacío
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                Console.WriteLine("✗ Error: El nombre no puede estar vacío\n");
+                return;
+            }
+
             Console.Write("Cantidad: ");
-            int cantidad = int.Parse(Console.ReadLine());
+            string cantidadStr = Console.ReadLine();
+            
+            // Validación de cantidad numérica
+            if (!int.TryParse(cantidadStr, out int cantidad) || cantidad < 0)
+            {
+                Console.WriteLine("✗ Error: La cantidad debe ser un número positivo\n");
+                return;
+            }
 
             inventario.Add(new Producto { Nombre = nombre, Cantidad = cantidad });
             Console.WriteLine("✓ Producto agregado exitosamente\n");
@@ -71,6 +90,23 @@ namespace SistemaInventario
                 Console.WriteLine($"- {producto.Nombre}: {producto.Cantidad} unidades");
             }
             Console.WriteLine();
+        }
+
+        static void BuscarProducto()
+        {
+            Console.Write("Nombre del producto a buscar: ");
+            string nombre = Console.ReadLine();
+
+            var producto = inventario.Find(p => p.Nombre.ToLower().Contains(nombre.ToLower()));
+            
+            if (producto != null)
+            {
+                Console.WriteLine($"✓ Encontrado: {producto.Nombre} - {producto.Cantidad} unidades\n");
+            }
+            else
+            {
+                Console.WriteLine("✗ Producto no encontrado\n");
+            }
         }
     }
 
